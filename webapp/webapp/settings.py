@@ -1,3 +1,4 @@
+import uuid
 """
 Django settings for webapp project.
 
@@ -20,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'fai^(r04jf0r13cahg9&yv&fk89@^p$+osd3+3b^-7l3$20$a4'
+SECRET_KEY = str(uuid.uuid1())
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
